@@ -12,4 +12,3 @@ A test bench to tryout the device lab at ECV
   ```
   npm run start
   ```
->>>>>>> Adds basic BrowserSync setup
