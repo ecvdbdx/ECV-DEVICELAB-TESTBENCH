@@ -1,0 +1,11 @@
+{
+  "name": "ecvbdx-device-lab",
+  "version": "1.0.0",
+  "description": "Server with samples to test different responsive methods on multiple devices",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --index './index.html' --files 'tests/assets/**/*.css' --files './**/*.html'"
+  },
+  "author": "ECV BDX",
+  "license": "MIT"
+}
