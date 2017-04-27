@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #444;
+}
+
+p {
+  margin: 0;
+}
+
+.grid {
+  width: 100%;
+  font-size: 0;
+}
+.grid > .row-12-12 {
+  background-color: #ccc;
+  border-bottom: 1px solid white;
+}
+.grid > .row-12-12 > [class*="row-"] {
+  background-color: #acd;
+  border: 1px solid blue;
+}
+.grid > .row-12-12 > [class*="row-"] > [class*="row-"] {
+  background-color: #cda;
+  border: 1px solid green;
+}
+
+[class*="row-"] {
+  padding: 2vh 2%;
+}
+
+.row-1-12 {
+  display: inline-block;
+  vertical-align: top;
+  width: 8.33333333%;
+}
+
+.row-2-12 {
+  display: inline-block;
+  vertical-align: top;
+  width: 16.66666667%;
+}
+
+.row-3-12 {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+
+.row-4-12 {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33333333%;
+}
+
+.row-5-12 {
+  display: inline-block;
+  vertical-align: top;
+  width: 41.66666667%;
+}
+
+.row-6-12 {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+.row-7-12 {
+  display: inline-block;
+  vertical-align: top;
+  width: 58.33333333%;
+}
+
+.row-8-12 {
+  display: inline-block;
+  vertical-align: top;
+  width: 66.66666667%;
+}
+
+.row-9-12 {
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+}
+
+.row-10-12 {
+  display: inline-block;
+  vertical-align: top;
+  width: 83.33333333%;
+}
+
+.row-11-12 {
+  display: inline-block;
+  vertical-align: top;
+  width: 91.66666667%;
+}
+
+.row-offset-1-12 {
+  margin-left: 8.33333333%;
+}
+
+.row-offset-2-12 {
+  margin-left: 16.66666667%;
+}
+
+.row-offset-3-12 {
+  margin-left: 25%;
+}
+
+.row-offset-4-12 {
+  margin-left: 33.33333333%;
+}
+
+.row-offset-5-12 {
+  margin-left: 41.66666667%;
+}
+
+.row-offset-6-12 {
+  margin-left: 50%;
+}
+
+.row-offset-7-12 {
+  margin-left: 58.33333333%;
+}
+
+.row-offset-8-12 {
+  margin-left: 66.66666667%;
+}
+
+.row-offset-9-12 {
+  margin-left: 75%;
+}
+
+.row-offset-10-12 {
+  margin-left: 83.33333333%;
+}
+
+.picture {
+  background-color: #222;
+  padding: 0;
+}
+.picture img {
+  width: 100%;
+}
+
+.title {
+  color: #acd;
+  font-size: 16px;
+  padding: 0;
+}
+
+.text {
+  color: black;
+  font-size: 16px;
+  padding: 0;
+}
+
+.link {
+  font-size: 16px;
+  color: black;
+  padding: 0;
+}
+
+.button {
+  background-color: #00b6de;
+}
+
+@media screen and (max-width: 768px) {
+  header [class*="row-"] {
+    display: none;
+  }
+
+  [class*="row-"]:not(.row-mobile) {
+    width: 100%;
+  }
+
+  [class*="row-offset-"] {
+    margin-left: 0;
+  }
+}

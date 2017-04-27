@@ -1,0 +1,303 @@
+@font-face {
+   font-family: 'Yanone';
+   src: url('font/YanoneKaffeesatz-Bold.otf'); 
+}@font-face {
+   font-family: 'DroidSans';
+   src: url('font/DroidSans.ttf'); 
+}@font-face {
+   font-family: 'SourceSansPro';
+   src: url('font/source-sans-pro.regular.ttf'); 
+}@font-face {
+   font-family: 'Ms-Pgothic';
+   src: url('font/Ms-Pgothic.ttf'); 
+}
+
+/* -------------------- GLOBAL ----------------------- */
+html{
+	background-color:#f7f7f7;
+	font-family: 'DroidSans';
+}
+body{
+	color:#6a6a6a;
+	margin:0;
+}
+main, footer div{
+	max-width:640px;
+	margin: 1.5em auto 0 auto;
+	padding: 0 10px;
+}
+header{
+	text-align:center;
+	margin:auto auto 5% auto;
+}
+section, nav{
+	margin-bottom:20%;	
+}
+a{
+	text-decoration:none;
+}
+i{
+	display:none;
+}
+
+/* -------------------- NAV ----------------------- */
+nav ul{
+	display:flex;flex-direction:row;justify-content:space-between;
+	text-align: center;
+	list-style-type:none;
+	padding: 0;
+}
+nav ul li{
+	background-color:#74d0ff;
+	width: 20%;
+}
+nav ul li a{
+    display: block;
+    color:white;
+    padding: 15px 0;
+}
+nav ul li:hover{
+    background-color:#26ec96;
+}
+
+/* -------------------- TITRE & BALISES TEXTE  ----------------------- */
+h1{
+	font-family: 'SourceSansPro';font-size:3.8em;color:#74d0ff;
+	line-height: 0.4em;
+	white-space: pre-line;
+}
+h1 span{
+	font-size:1.2rem;
+	margin-left:65px;
+}
+h1:before {
+    content: '☁';
+    display: inline-block;
+    font-family: 'Ms-Pgothic';font-size: 3.4em;color: white;text-shadow: 0px 1px #8b8b8b;
+    line-height: 1.0em;
+    width: 100%;
+}
+h2{	
+	font-family:'Yanone';font-size:3.6em;color:#74d0ff;text-shadow:0px -1px 1px #555;
+	text-transform:capitalize;
+	margin: 5% 0;
+}
+h3{
+	font-family:'Yanone';font-size:3.6em;color:#74d0ff;
+	margin:0;	
+}
+strong{
+	color:#2ca6e5;
+}
+p span{
+	color:#6ac997;
+	text-decoration:underline;
+}
+mark{
+	background-color:white;
+	padding:0 2px;
+	border:1px solid #2ca6e5;border-radius:2px;
+}
+blockquote{
+	font-style: italic;
+}
+abbr{
+	border-bottom:1px dashed;
+}
+
+/* -------------------- LISTES ----------------------- */
+main section ul > li{
+	list-style-type:none;
+}
+main section ul > li:before{
+	content:'.';
+	margin-right:5px;
+}
+
+/* -------------------- PRE ----------------------- */
+pre{
+	background-color: white;
+	text-align: left;
+    padding: 15px;
+    border: 1px solid #74d0ff;border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #74d0ff;    
+    white-space: pre-wrap;
+}
+figure{
+	margin:1em 0;
+}
+figcaption{
+	font-style: italic;
+	text-align: right;
+}
+
+/* -------------------- TABLEAU ----------------------- */
+table{
+	width:100%;
+	border-collapse:collapse;
+}
+caption{
+	width:100%;
+	font-style:italic;
+	margin-bottom: 35px;
+}
+tr{
+	height: 60px;
+}
+td{	
+	text-align:center;
+	color: #6ac997;font-weight:bold;
+	padding :0;
+}
+th:nth-child(even){
+	background-color:#f2f2f2;
+}
+td:first-child{
+	padding:15px;
+	text-align:left;
+	color: #6a6a6a;font-weight:normal;
+}
+tr:nth-child(even){
+	background-color:white;
+}
+tr:nth-child(odd) td:nth-child(even){
+	background-color:#f2f2f2;
+}
+tr:last-child td{
+	color: #2ca6e5;
+}
+tr:last-child td:first-child{
+	color: #6a6a6a;
+	font-weight:bold;
+}
+
+/* -------------------- DOWNLOAD ----------------------- */
+section div a{
+	display: block;
+    text-align: center;
+    width: 50%;
+    background-color: #ffc843;
+	font-family: 'Yanone';font-size: 2.8em;color: white;
+    padding: 10px;
+    margin: 35px auto auto auto;
+	border: none;
+	cursor: pointer;
+}
+section div a:before{
+	content:'➲';
+	display: inline-block;
+   	font-family: 'Ms-Pgothic';font-size:1.4em;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/* -------------------- FOOTER ----------------------- */
+footer{
+	background-color:#74d0ff;
+	color:white;
+	padding:10px 0;
+}
+footer div{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+footer section{
+	margin:5% 1%;
+	flex:1;
+}
+footer h3{
+	color:white;
+}
+footer a{
+	color:white;
+	font-weight:bold;
+}
+
+/* -------------------------------------------------------
+---------------------- RESPONSIVE ------------------------
+------------------------------------------------------- */
+@media screen and (max-width:640px){
+	
+	/* -------------------- MENU ----------------------- */
+	i, i:after{
+    	content: '☁';
+		display:block;
+		position:fixed;
+		font-size:2em;
+		outline:none;
+		top:0;left:20px;
+		cursor:pointer;
+	}
+	i:focus ~ nav, nav:hover{
+		margin-left:0;
+	}
+	nav{
+		height: 100%;
+	    position: fixed;
+	    background-color: rgba(255,255,255,0.8);
+		margin-left:-100%;
+	    top: 0;left: 0;
+	    transition:all 0.5s;
+	}
+	nav ul{
+		flex-direction: column;
+		padding:20px;
+	}
+	nav ul li{
+		width:auto;
+		margin-bottom:10px;
+	}
+	nav ul li a{
+		padding: 15px 20px;
+	}
+
+	/* -------------------- TABLEAU ----------------------- */
+	table,tbody{
+		display:flex;flex-direction:column;
+	}
+	tr{
+		display:flex;
+		height:auto;
+	}
+	th{
+		padding:15px;
+	}
+	td:first-child, th:first-child{
+		display: inline-block;
+		flex:1;
+		width: 1.5em;
+		overflow: hidden;
+		line-height: 1.5;
+		padding: 1em 5px;
+	}
+	td:first-child p, th:first-child{
+		display: inline-block;
+		transform-origin: 0 0;
+	    -webkit-transform: translate(0,100%) rotate(-90deg);
+	    -moz-transform: translate(0,100%) rotate(-90deg);
+	    -o-transform: translate(0,100%) rotate(-90deg);
+	    -ms-transform: translate(0,100%) rotate(-90deg);
+		transform: translate(0,100%) rotate(-90deg);
+		white-space: nowrap;
+	}
+	td:first-child p:after{
+		content: "";
+		float: left;
+		margin-top: 100%;
+ 	}
+	td + td, th + th{
+		display: flex;align-items: center;
+	    justify-content: center;
+	    text-align: center;
+	    flex:3;
+	}
+
+	/* -------------------- FOOOTER ----------------------- */
+	footer div{
+		flex-direction: column;
+	}
+}
